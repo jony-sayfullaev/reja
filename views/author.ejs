@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet" />
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <div class="frame">
+        <div class="main_frame">
+            <div class="left-side">
+                <div class="left1">
+                    <div class="left1-1">
+                        <img src="images/portfolio.jfif" width="156px" height="142px" alt="" />
+                    </div>
+                    <div class="left1-2">
+                        <%=user.name%>
+                    </div>
+                    <div class="left1-3">
+                        <%=user.profession%>
+                    </div>
+                    <div class="left1-4">
+                        <a href="#" class="link-href">
+                            <div class="icon">
+                                <img src="icon/Dribbble.svg" class="icon1" />
+                            </div>
+                        </a>
+                        <a href="#" class="link-href">
+                            <div class="icon">
+                                <img src="icon/Facebook.svg" class="icon1" />
+                            </div>
+                        </a>
+                        <a href="#" class="link-href">
+                            <div class="icon">
+                                <img src="icon/Instagram.svg" class="icon1" />
+                            </div>
+                        </a>
+                        <a href="#" class="link-href">
+                            <div class="icon">
+                                <img src="icon/Linkeding.svg" class="icon1" />
+                            </div>
+                        </a>
+                        <a href="#" class="link-href">
+                            <div class="icon">
+                                <img src="icon/Twitter.svg" class="icon1" />
+                            </div>
+                        </a>
+                        <a href="#" class="link-href">
+                            <div class="icon">
+                                <img src="icon/Youtube.svg" class="icon1" />
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="left-margin"></div>
+                <div class="left2">
+                    <div class="row1">
+                        <p class="col1 col1-1-word">Age:</p>
+                        <p class="col2 col1-1-word2">
+                            <%=user.age%>
+                        </p>
+                    </div>
+                    <div class="row1">
+                        <p class="col1 col1-1-word word2" style="
+                  width: 78px;
+                  height: 24px;
+                  background-color: rgb(255, 196, 68);
+                ">
+                            Residence:
+                        </p>
+                        <p class="col2 col1-1-word2">
+                            <%=user.residence%>
+                        </p>
+                    </div>
+                    <div class="row1">
+                        <p class="col1 col1-1-word word3" style="
+                  width: 74px;
+                  height: 24px;
+                  background-color: rgb(255, 196, 68);
+                ">
+                            Freelance:
+                        </p>
+                        <p class="col2 col1-1-word2" style="color: rgb(5, 207, 5)">
+                            Available
+                        </p>
+                    </div>
+                    <div class="row1">
+                        <p class="col1 col1-1-word word4" style="
+                  width: 63px;
+                  height: 24px;
+                  background-color: rgb(255, 196, 68);
+                ">
+                            Address:
+                        </p>
+                        <p class="col2 col1-1-word2">
+                            <%=user.adress%>
+                        </p>
+                    </div>
+                </div>
+                <div class="left-margin"></div>
+                <div class="left3">
+                    <h1 class="h1">Languages</h1>
+                    <div class="row2">
+                        <p>
+                            <%=user.languages[0]%>
+                        </p>
+                        <p>100%</p>
+                    </div>
+                    <div><img src="menu_icon/100.png" class="line-icon" /></div>
+                    <div class="row2">
+                        <p>
+                            <%=user.languages[2]%>
+                        </p>
+                        <p>80%</p>
+                    </div>
+                    <div><img src="menu_icon/80.png" class="line-icon" /></div>
+                    <div class="row2">
+                        <p>
+                            <%=user.languages[3]%>
+                        </p>
+                        <p>60%</p>
+                    </div>
+                    <div><img src="menu_icon/60.png" class="line-icon" /></div>
+                </div>
+                <div class="left-margin"></div>
+                <div class="left4">
+                    <h1 class="h1">Skills</h1>
+                    <div class="row2">
+                        <p>
+                            <%=user.skills[0]%>
+                        </p>
+                        <p>100%</p>
+                    </div>
+                    <div><img src="menu_icon/100.png" class="line-icon" /></div>
+                    <div class="row2">
+                        <p>
+                            <%=user.skills[1]%>
+                        </p>
+                        <p>100%</p>
+                    </div>
+                    <div><img src="menu_icon/100.png" class="line-icon" /></div>
+                    <div class="row2">
+                        <p>
+                            <%=user.skills[2]%>
+                        </p>
+                        <p>80%</p>
+                    </div>
+                    <div><img src="menu_icon/80.png" class="line-icon" /></div>
+                    <div class="row2">
+                        <p>
+                            <%=user.skills[3]%>
+                        </p>
+                        <p>80%</p>
+                    </div>
+                    <div><img src="menu_icon/80.png" class="line-icon" /></div>
+                </div>
+                <div class="left-margin"></div>
+                <div class="left5">
+                    <h1 class="h1">Extra Skills</h1>
+                    <div class="left5-col">
+                        <img src="menu_icon/Icons.png" class="icon5" alt="" />
+                        <p>
+                            <%= user.extra_skills[0] %>
+                        </p>
+                    </div>
+                    <div class="left5-col">
+                        <img src="menu_icon/Icons.png" class="icon5" alt="" />
+                        <p>
+                            <%=user.extra_skills[1]%>
+                        </p>
+                    </div>
+                    <div class="left5-col">
+                        <img src="menu_icon/Icons.png" class="icon5" alt="" />
+                        <p>
+                            <%=user.extra_skills[2]%>
+                        </p>
+                    </div>
+                </div>
+                <div class="left-margin"></div>
+            </div>
+            <div class="middle-side">
+                <div class="header">
+                    <div class="left-container">
+                        <div>
+                            <h1>Junior Softwae Developer in IT Company</h1>
+                        </div>
+                        <div>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Tempora iste architecto sed voluptate cupiditate magni saepe
+                                porro commodi! Sunt necessitatibus consequuntur quaerat ut
+                                eveniet, eaque quisquam laborum dolor delectus magnam?
+                            </p>
+                        </div>
+                        <div>
+                            <button class="btn-hire">
+                                <img class="btn-hire" src="menu_icon/hire.jpg" alt="" />
+                            </button>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="menu_icon/man.png" class="man" />
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="headeroffotter">
+                        <h2 class="my-service">My Services</h2>
+                        <div class="info1">
+                            <p class="info">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Numquam laboriosam culpa dolor vero velit hic laudantium,
+                                perspiciatis
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid-footer">
+                        <div class="grid-container">
+                            <img src="menu_icon/coding.svg" class="icon-foot" />
+                            <p class="grid-info">Web Development</p>
+                            <p class="grid-info2">Blog.E-Commerce</p>
+                        </div>
+                        <div class="grid-container">
+                            <img src="menu_icon/coding.svg" class="icon-foot" />
+                            <p class="grid-info">Web Development</p>
+                            <p class="grid-info2">Blog.E-Commerce</p>
+                        </div>
+                        <div class="grid-container">
+                            <img src="menu_icon/coding.svg" class="icon-foot" />
+                            <p class="grid-info">Web Development</p>
+                            <p class="grid-info2">Blog.E-Commerce</p>
+                        </div>
+                        <div class="grid-container">
+                            <img src="menu_icon/coding.svg" class="icon-foot" />
+                            <p class="grid-info">Web Development</p>
+                            <p class="grid-info2">Blog.E-Commerce</p>
+                        </div>
+                        <div class="grid-container">
+                            <img src="menu_icon/coding.svg" class="icon-foot" />
+                            <p class="grid-info">Web Development</p>
+                            <p class="grid-info2">Blog.E-Commerce</p>
+                        </div>
+                        <div class="grid-container">
+                            <img src="menu_icon/coding.svg" class="icon-foot" />
+                            <p class="grid-info">Web Development</p>
+                            <p class="grid-info2">Blog.E-Commerce</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="contrast-icon">
+                    <img src="menu_icon/Contrast.png" class="contrast" alt="" />
+                </div>
+                <div class="right-icons">
+                    <img src="menu_icon/Home.png" class="right-middle-icons" alt="" />
+                    <img src="menu_icon/Contact.png" class="right-middle-icons" alt="" />
+                    <img src="menu_icon/Cv.png" class="right-middle-icons" alt="" />
+                    <img src="menu_icon/Portfolio.png" class="right-middle-icons" alt="" />
+                    <img src="menu_icon/Blog.png" class="right-middle-icons" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

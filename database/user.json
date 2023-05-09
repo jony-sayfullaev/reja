@@ -1,0 +1,60 @@
+{
+    "name": "Jony",
+    "profession": "Software Engineer",
+    "age": 22,
+    "residence": "South Korea",
+    "address": "Busan",
+    "languages": [
+        "Uzbek",
+        "Korean",
+        "English"
+    ],
+    "skills": [
+        "Html",
+        "Css",
+        "JavaScript",
+        "Nodejs",
+        "Python"
+    ],
+    "extra_skills": [
+        "Bootstrap",
+        "Materialize",
+        "Styling",
+        "Sass",
+        "Django",
+        "Flask",
+        "Git Knowledge"
+    ],
+    "work place": "IT company",
+    "service_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque eligendi necessitatibus vitae quae at totam laboriosam aliquam dolores praesentium eaque optiocumque nihil soluta, alias eveniet esse deleniti assumenda asperiores.",
+    "about me": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum atque doloribus numquam, excepturi sed ut ratione quibusdam voluptatem debitis cum delectus dolor, dolorem at eius praesentium quis a corporis perferendis!",
+    "city": "Karshi",
+    "title": [
+        "flower",
+        "seedlings",
+        "gardner",
+        "old",
+        "new"
+    ],
+    "flower_desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum atque doloribus numquam, excepturi sed ut ratione quibusdam voluptatem debitis cum delectus dolor, dolorem at eius praesentium quis a corporis perferendis!",
+    "flower_name": [
+        "Tulip",
+        "Daffodil",
+        "Poppy",
+        "Sunflower",
+        "Bluebell",
+        "Rose",
+        "Snowdrop"
+    ],
+    "flower_price": [
+        "15$",
+        "13$",
+        "23$",
+        "32$",
+        "52"
+    ],
+    "famous_words": [
+        "World is beautiful with flowers"
+    ],
+    "famous_name": "Steve Jobs"
+}
