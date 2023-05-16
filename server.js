@@ -2,7 +2,7 @@ const http = require("http");
 const mongodb = require("mongodb");
 
 let db;
-const connectionString = "mongodb+srv://jony:QgAieKlOJ59hDgV8@cluster0.exmecb2.mongodb.net/Reja"
+const connectionString = "mongodb+srv://jony:R95oCHWhzRu17P4y@cluster0.exmecb2.mongodb.net/Reja"
 mongodb.connect(connectionString, { useNewUrlParser: true, useUnifiedTopology: true }, (err, client) => {
     if (err) console.log("ERROR: ", err);
     else {

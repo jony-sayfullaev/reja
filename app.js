@@ -21,20 +21,34 @@ app.use(express.urlencoded({ extended: true }));
 
 app.set("views", "views");
 app.set("view engine", "ejs");
-
+// Routers
+// create-item
 app.post("/create-item", (req, res) => {
     console.log(req.body);
-    res.json({ test: "success" });
+    const new_reja = req.body.reja;
+    db.collection("plans").insertOne({ reja: new_reja }, (err, data) => {
+        console.log();
+        res.json(data.ops[0]);
+    })
 });
 
 app.get("/author", (req, res) => {
     res.render("author", { user: user });
 });
 
+// getting
 app.get("/", function (req, res) {
-    res.render("reja");
+    db.collection("plans").find().toArray((err, data) => {
+        if (err) {
+            console.log(err);
+            res.end("Something went wrong")
+        } else {
+            console.log(data);
+            res.render("reja", { items: data });
+        }
+    });
 });
 
-module.exports = app
+module.exports = app;
 
 
