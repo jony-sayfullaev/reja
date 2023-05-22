@@ -22,6 +22,7 @@ app.use(express.urlencoded({ extended: true }));
 app.set("views", "views");
 app.set("view engine", "ejs");
 // Routers
+
 // create-item
 app.post("/create-item", (req, res) => {
   console.log(req.body);
@@ -31,6 +32,7 @@ app.post("/create-item", (req, res) => {
     res.json(data.ops[0]);
   });
 });
+
 // delete-item
 app.post("/delete-item", (req, res) => {
   const id = req.body.id;

@@ -1,34 +1,25 @@
-// Task-D
+// Challenge_3 => Sezar
 
+const alphabet = "abcdefghijklmonpqrstuvwxywz";
+let code = 2;
+const message = "hello, how are you doing ?";
 
-const moment = require("moment")
+function decodeMessage(message, secret) {
+  let lowerCaseLetter = message.toLowerCase();
+  let letters = alphabet.split("");
+  let new_str = "";
 
-class Shop {
-    constructor(non, lagmon, cola) {
-        this.non = non;
-        this.lagmon = lagmon;
-        this.cola = cola
+  for (let i = 0; i < lowerCaseLetter.length; i++) {
+    let currentLetter = lowerCaseLetter[i];
+    if (currentLetter === " ") {
+      new_str += currentLetter;
+      continue;
     }
-
-    qoldiq(non, lagmon, cola) {
-        const nowString = moment().format('HH:mm');
-        return `Hozir: ${nowString}da ${this.non} ta Non, ${this.lagmon} ta Lagmon, ${this.cola} ta CocaCola mavjud!`
-    }
-
-    sotish(non, num_bread) {
-        this.non -= num_bread;
-        return `${non}: ${num_bread} sotildi`;
-    }
-
-    qabul(cola, num_cola) {
-        this.cola += num_cola;
-        return `${cola}: ${num_cola} qabul qilindi`
-    }
-
+    let currentIndex = letters.indexOf(currentLetter);
+    let new_index = currentIndex + secret;
+    if (new_index > 25) new_index = new_index - 26;
+    if (new_index < 0) new_index = new_index + 26;
+  }
 }
 
-const shop = new Shop(5, 5, 5);
-console.log(shop.qoldiq());
-console.log(shop.sotish("non", 3));
-console.log(shop.qabul("cola", 5));
-console.log(shop.qoldiq());
+decodeMessage(message);
